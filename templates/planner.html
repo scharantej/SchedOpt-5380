@@ -1,0 +1,30 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Daily Planner</title>
+</head>
+<body>
+<h1>Daily Planner</h1>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Start Time</th>
+<th>End Time</th>
+</tr>
+</thead>
+<tbody>
+{% for task in daily_planner %}
+<tr>
+<td>{{ task.task }}</td>
+<td>{{ task.start_time }}</td>
+<td>{{ task.end_time }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>
+
